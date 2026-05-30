@@ -1,0 +1,12 @@
+{
+  "name": "noted",
+  "version": "1.0.0",
+  "description": "A Note Taking App",
+  "license": "ISC",
+  "author": "Gitartha",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

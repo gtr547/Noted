@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Minimal Notes - Create a new note">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Noted: Create</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <span class="text-logo">N.</span>
+            <nav id="main-navigation">
+                <ul role="list">
+                    <li role="listitem"><a href="/">Home</a></li>
+                    <li role="listitem"><a href="./feed.html">Notes</a></li>
+                    <li role="listitem"><a href="./upload.html">New Note</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="site-header">
+            <a href="/" class="site-title-page">Noted</a>
+        </div>
+    </header>
+    <main class="form-container" aria-labelledby="form-title">
+        <h1 class="form-title" id="form-title">Create a Note</h1>
+        <form id="eventForm">
+            <label for="title" class="lab-title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Project ideas" class="input-title">
+
+            <label for="details" class="lab-details">Note Content:</label>
+            <textarea id="details" name="details" rows="5"
+                placeholder="Start typing your thoughts here..." class="input-details"></textarea>
+            
+            <label for="datetime" class="lab-date-time">Date:</label>
+            <input type="datetime-local" id="datetime" name="datetime" class="input-date-time">
+            
+            <label for="category" class="lab-location">Tag / Category:</label>
+            <input type="text" id="category" name="category" placeholder="Work, Personal, etc." class="input-location">
+
+            <button type="submit" class="submit-btn">Save Note</button>
+            <div class="form-message">
+                <p class="form-message-text">Your notes are securely saved to your <a href="./feed.html">dashboard</a>.</p>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Noted. All rights reserved.</p>
+    </footer>
+    <script type="module" src="upload.js"></script>
+</body>
+
+</html>
