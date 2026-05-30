@@ -6,13 +6,10 @@ const PORT = 8000;
 const __dirname = import.meta.dirname;
 
 
-const server = http.createServer((req,res)=>{
+const server = http.createServer(async(req,res)=>{
 
-    const resourcePath = serveStatic(__dirname);
+    await serveStatic(req, res, __dirname);
 
-    res.statusCode = 200;
-    res.setHeader("Content-Type", "text/html" );
-    res.end(`<html><h1>The server is working</h1></html>`);
 });
 
 
