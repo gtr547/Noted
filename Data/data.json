@@ -31,5 +31,11 @@
     "timeStamp": "25 June 2026 at 01:20",
     "text": "When fine-tuning transformer-based Automatic Speech Recognition (ASR) systems for specific regional accents or languages with limited training data, preventing model overfitting is a major challenge. Standard datasets are often too clean, meaning the neural network might memorize the specific acoustic footprint of the recording environment rather than the actual vocal formants. To build a robust accent classification system, aggressive data augmentation is necessary. By deliberately injecting synthetic background noise, applying time-stretching, and altering pitch across the training data, the model is forced to focus strictly on the nuanced phonetic variations of the spoken language, making it highly resilient when deployed in real-world, noisy environments.",
     "title": "Handling Audio Artifacts in ASR Systems"
+  },
+  {
+    "category": "Embedded Systems & Hardware Engineering",
+    "timeStamp": "6 June 2026 at 02:05",
+    "text": "Designing remote, low-power monitoring systems, such as a water-level sensor or field-based environmental tracker, requires a deep understanding of sleep-mode management and peripheral power gating. The most common pitfall in system design is leaving unused micro-controller pins floating or keeping high-current components—like Wi-Fi modules or sensors—continuously powered. To maximize longevity in a remote installation, the system architecture should follow an \"event-driven\" philosophy. The CPU should remain in a deep-sleep state for 99% of its lifecycle, waking up only via hardware interrupts triggered by a timer or a physical sensor signal.\nEfficient power management also involves optimizing the communication protocol; for instance, batching data transmissions into infrequent, short-burst packets significantly reduces the total radio-on time. By calculating the total current draw against the capacity of the power source (like a solar-charged Li-ion cell), engineers can implement \"power-aware\" logic, where the system dynamically disables non-essential tasks if the battery voltage drops below a critical threshold, ensuring the most vital data continues to reach the server until maintenance can be performed.",
+    "title": "Optimizing Power Efficiency in Remote IoT Nodes"
   }
 ]
