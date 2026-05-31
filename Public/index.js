@@ -13,7 +13,7 @@ function renderCards(cardsData) {
   cardsData.forEach((card, i) => {
     cardsHTML += `
 <article class="note-card" aria-labelledby="note-title-${i}">
-  <p class="card-details">${card.timeStamp} • ${card.location}</p>
+  <p class="card-details">${card.timeStamp} • ${card.category}</p>
   <h3 id="note-title-${i}">${card.title}</h3>
   <div class="note-text-wrapper">
     <p class="note-text">${card.text}</p>

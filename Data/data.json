@@ -1,0 +1,23 @@
+[
+  {
+    "uuid": "a9f1c6e5-9383-4d12-b28d-734c9370f861",
+    "category": "Pet Training & Nutrition",
+    "timeStamp": "7 Jan 2025 at 09:30",
+    "title": "High-Value Rewards for Recall",
+    "text": "When working on recall and obedience with a young, energetic puppy, high-value treats are essential. Because liquid cow's milk can easily upset a dog's digestive system, using small dollops of curd or dry kibble variants that incorporate safe dairy makes for excellent, easily digestible rewards to keep them motivated during outdoor training."
+  },
+  {
+    "uuid": "47e3291a-6f67-4fc0-9d06-25fa4d1f3ae1",
+    "category": "Software Architecture",
+    "timeStamp": "20 March 2024 at 11:30",
+    "title": "Structuring a Scalable Backend",
+    "text": "Transitioning from front-end mobile development to full-stack requires a solid grip on backend organization. Implementing the MVC (Model-View-Controller) pattern in frameworks like Laravel ensures that complex business logic remains completely separate from routing, greatly simplifying the process of serving robust APIs to applications like those built in Flutter."
+  },
+  {
+    "uuid": "b83cb7e0-df38-493b-b53d-2616175ea5f9",
+    "category": "Music Theory & Performance",
+    "timeStamp": "7 Jan 2025 at 10:00",
+    "title": "Transposing for Vocal Accompaniment",
+    "text": "Adapting a song to fit a specific vocal range is a vital skill for accompaniment. If a track's original arrangement in E Major strains the singer's voice, utilizing a capo on an acoustic guitar or the digital transpose function on a keyboard allows for an instant pitch shift without needing to mentally recalculate complex chord progressions on the fly."
+  }
+]
