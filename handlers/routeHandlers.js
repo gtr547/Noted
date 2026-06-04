@@ -3,6 +3,7 @@ import { sendResponse } from "../utils/sendResponse.js";
 import { parseJSONBody } from "../utils/parseJSONBody.js";
 import { addNewNote } from "../utils/addNewNote.js";
 import { sanitizeInput } from "../utils/sanitizeInput.js";
+import { quotes } from "../Data/quotes.js";
 
 
 export async function handleGet(res){
@@ -26,3 +27,29 @@ export async function handlePost(req, res) {
     }
   
 }
+
+export async function handleQuote(req, res){
+    res.statusCode = 200;
+
+    res.setHeader("Content-Type", "text/event-stream");
+    res.setHeader("Cache-Control", "no-cache");
+    res.setHeader("Connection", "keep-alive");
+
+    setInterval(()=>{
+        let randomIndex = Math.floor(Math.random() * quotes.length);
+
+        res.write(
+            `data: ${JSON.stringify(
+                {
+                    event: "quote-update",
+                    quote: quotes[randomIndex]
+                }
+            )}\n\n`
+        );
+
+
+    },3000);
+
+}
+
+
