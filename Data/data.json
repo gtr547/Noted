@@ -37,5 +37,12 @@
     "timeStamp": "6 June 2026 at 02:05",
     "text": "Designing remote, low-power monitoring systems, such as a water-level sensor or field-based environmental tracker, requires a deep understanding of sleep-mode management and peripheral power gating. The most common pitfall in system design is leaving unused micro-controller pins floating or keeping high-current components—like Wi-Fi modules or sensors—continuously powered. To maximize longevity in a remote installation, the system architecture should follow an \"event-driven\" philosophy. The CPU should remain in a deep-sleep state for 99% of its lifecycle, waking up only via hardware interrupts triggered by a timer or a physical sensor signal.\nEfficient power management also involves optimizing the communication protocol; for instance, batching data transmissions into infrequent, short-burst packets significantly reduces the total radio-on time. By calculating the total current draw against the capacity of the power source (like a solar-charged Li-ion cell), engineers can implement \"power-aware\" logic, where the system dynamically disables non-essential tasks if the battery voltage drops below a critical threshold, ensuring the most vital data continues to reach the server until maintenance can be performed.",
     "title": "Optimizing Power Efficiency in Remote IoT Nodes"
+  },
+  {
+    "category": "Developmen",
+    "timeStamp": "30 June 2026 at 03:22",
+    "text": "Refactor the main dashboard widgets to match the minimalist UI mockup. Need to clean up the padding around the transaction row cards and ensure the custom category icons render properly. Check if the aesthetic balance looks right on smaller screens.",
+    "title": "Expense App UI Tweaks",
+    "uuid": "2ee753bb-9fda-45a9-a668-986078f96f30"
   }
 ]
